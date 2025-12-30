@@ -1,0 +1,24 @@
+:root {
+  --ex-bg-main: #0a0a10;
+  --ex-bg-alt: #11111c;
+  --ex-bg-hover: #1a1a2a;
+
+  --ex-accent-purple: #7c3aed;
+  --ex-accent-red: #b11226;
+
+  --ex-accent-gradient: linear-gradient(
+    135deg,
+    var(--ex-accent-purple),
+    var(--ex-accent-red)
+  );
+
+  --ex-glow-purple: rgba(124, 58, 237, 0.35);
+  --ex-glow-red: rgba(177, 18, 38, 0.35);
+
+  --ex-text-main: #e8e8ee;
+  --ex-text-muted: #9b9bad;
+
+  --ex-border: #1f1f2f;
+  --ex-radius: 6px;
+  --ex-speed: 160ms;
+}

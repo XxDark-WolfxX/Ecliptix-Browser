@@ -1,0 +1,122 @@
+#tabs-bar {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 6px;
+  gap: 6px;
+
+  background: var(--ex-bg-alt);
+  border-bottom: 1px solid var(--ex-border);
+
+  user-select: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  -webkit-app-region: drag;
+}
+
+#tabs-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 28px;
+  min-width: 140px;
+  max-width: 220px;
+
+  padding: 0 10px;
+  border-radius: var(--ex-radius);
+
+  background: var(--ex-bg-main);
+  color: var(--ex-text-muted);
+
+  font-size: 13px;
+  cursor: pointer;
+
+  transition:
+    background var(--ex-speed),
+    color var(--ex-speed),
+    box-shadow var(--ex-speed);
+
+  -webkit-app-region: no-drag;
+}
+
+.tab:hover {
+  background: var(--ex-bg-hover);
+  color: var(--ex-text-main);
+  box-shadow: 0 0 8px var(--ex-glow-purple);
+}
+
+.tab.active {
+  background: #151524;
+  color: var(--ex-text-main);
+
+  box-shadow:
+    inset 0 -2px 0 var(--ex-accent-purple),
+    0 0 10px var(--ex-glow-purple);
+}
+
+.tab .favicon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.tab span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tab .close {
+  opacity: 0;
+  pointer-events: none;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+
+  border: none;
+  background: transparent;
+  color: var(--ex-text-muted);
+
+  cursor: pointer;
+  transition: all var(--ex-speed);
+}
+
+.tab:hover .close {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tab .close:hover {
+  background: var(--ex-accent-red);
+  color: #fff;
+}
+
+#tab-add {
+  width: 28px;
+  height: 28px;
+
+  border-radius: var(--ex-radius);
+  border: none;
+
+  background: transparent;
+  color: var(--ex-text-muted);
+  font-size: 18px;
+
+  cursor: pointer;
+  transition: background var(--ex-speed), color var(--ex-speed);
+
+  -webkit-app-region: no-drag;
+}
+
+#tab-add:hover {
+  background: var(--ex-bg-hover);
+  color: var(--ex-text-main);
+}

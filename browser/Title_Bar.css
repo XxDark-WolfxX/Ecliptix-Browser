@@ -1,0 +1,44 @@
+#titlebar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+  background: var(--ex-bg-main);
+  border-bottom: 1px solid var(--ex-border);
+
+  -webkit-app-region: drag;
+}
+
+#titlebar .brand {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--ex-text-muted);
+}
+
+.window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.window-controls button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+
+  background: var(--ex-border);
+  cursor: pointer;
+
+  transition: background var(--ex-speed);
+  -webkit-app-region: no-drag;
+}
+
+.window-controls button:hover {
+  background: var(--ex-accent-purple);
+}
+
+.window-controls button[data-win="close"]:hover {
+  background: var(--ex-accent-red);
+}
