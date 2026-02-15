@@ -9,6 +9,6 @@ the big tech companies for "how do devs use our source code?", because it remove
 things that comprimise your privacy.
 
  * Please, if you would like to support us, sub to my channels, as any money I get can help me contiue services like this.
- * If you have questions, feel free to email the developer @Dark_Wolf_Entertainment@outlook.com. She is available for responses anywhere
+ * If you have questions, feel free to email the main developer @Dark_Wolf_Entertainment@outlook.com. She is available for responses anywhere
 from 12 PM EST untill 2 AM EST.
  * Please, if you find a bug, leave feedback or commets. They can help alot with the process.
